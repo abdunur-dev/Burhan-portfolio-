@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
               <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-primary/20 group-hover:ring-primary/60 transition-all duration-300 group-hover:scale-110">
-                <Image src="/logo.jpg" alt="Abdu Dev" fill className="object-cover" />
+                <Image src="logo.jpg" alt="Abdu Dev" fill className="object-cover" />
               </div>
               <span className="text-lg sm:text-xl font-bold tracking-tight">
                 abdu<span className="text-primary">{"{dev}"}</span>
