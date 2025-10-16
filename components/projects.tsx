@@ -14,13 +14,14 @@ interface Project {
   live: string | null
 }
 
+// ✅ Updated image paths with leading slash
 const PROJECTS: Project[] = [
   {
     title: "Base Day 1 Challenge",
     description:
       "My first smart contract deployed on Base Sepolia testnet. A foundational Web3 project demonstrating smart contract development, deployment, and interaction with the Base blockchain network.",
     tags: ["Solidity", "Base", "Web3", "Smart Contracts"],
-    image: "base-smart-contract.jpg",
+    image: "/base-smart-contract.jpg",
     github: "https://github.com/abdunur-dev/Base-day1-challeng",
     live: null,
   },
@@ -29,7 +30,7 @@ const PROJECTS: Project[] = [
     description:
       "My second Web3 OnchainKit project for Base network. A decentralized application featuring wallet integration, on-chain interactions, and modern Web3 user experience built with Next.js.",
     tags: ["Next.js", "OnchainKit", "Base", "Web3"],
-    image: "baselink-app.jpg",
+    image: "/baselink-app.jpg",
     github: "https://github.com/abdunur-dev/Base-day-2-challeng",
     live: "https://baselink-app.vercel.app",
   },
@@ -38,7 +39,7 @@ const PROJECTS: Project[] = [
     description:
       "A comprehensive Islamic apologetics and comparative religion platform. Features multilingual support (Arabic, Amharic, English), article management system, and educational resources for interfaith dialogue.",
     tags: ["Next.js", "React", "Tailwind", "CMS"],
-    image: "salah-apologetics.jpg",
+    image: "/salah-apologetics.jpg",
     github: null,
     live: "https://salahapologetics.com",
   },
@@ -47,7 +48,7 @@ const PROJECTS: Project[] = [
     description:
       "A decentralized lending and borrowing platform built with Solidity smart contracts. Features include collateralized loans, interest rate calculations, and liquidity pools.",
     tags: ["Solidity", "Next.js", "Ethers.js", "Web3"],
-    image: "defi.jpg",
+    image: "/defi.jpg",
     github: null,
     live: null,
   },
@@ -56,7 +57,7 @@ const PROJECTS: Project[] = [
     description:
       "Full-featured NFT marketplace with minting, buying, selling, and auction capabilities. Built with React and integrated with IPFS for decentralized storage.",
     tags: ["React", "Solidity", "IPFS", "Tailwind"],
-    image: "InShot_20251014_203422592~2.jpg",
+    image: "/InShot_20251014_203422592~2.jpg",
     github: null,
     live: null,
   },
@@ -122,6 +123,7 @@ export function Projects() {
             >
               <Card className="group overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 h-full flex flex-col hover:-translate-y-2">
                 <div className="relative aspect-video overflow-hidden bg-secondary">
+                  {/* ✅ Fixed image path */}
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
