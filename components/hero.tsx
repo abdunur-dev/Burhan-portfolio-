@@ -168,7 +168,7 @@ export function Hero() {
               >
                 <div className="relative group">
                   <Image
-                    src="/logo.jpg"
+                    src="logo.jpg"
                     alt="Abdurhaman Nur"
                     width={400}
                     height={400}
